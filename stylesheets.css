@@ -54,7 +54,7 @@ header{
 .navbuttons a{
     padding: 5px 5px;
     text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: Times, 'Times New Roman', serif;
     color: hsl(0, 0%, 90%);
     font-size: 1.1em;
     display: flex;
@@ -98,7 +98,7 @@ i{
     font-style: italic;
 }
 #job{
-    font-family: sans-serif;
+    font-family:PlayfairDisplay-Italic;
     color: hsl(247, 100%, 50%);
     font-size: 1.5rem;
     margin-top: 0%;
@@ -164,7 +164,6 @@ i{
     border-radius: 3px;
     font-family: monospace;
     font-size: 1.2rem;
-    margin-top: 50%;
     position: relative;
     overflow: hidden;
 }
@@ -193,18 +192,21 @@ span{
     font: 1.2em arial;
     color: hsl(0, 0%, 100%);
 }
-footer{
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    max-width: 100%;
+.background footer{
+    margin-left: 40px;
     color: hsl(0, 0%, 56%);
     font-family: monospace;
     bottom: 0px;
+    position: absolute;
 }
 #footerLogo img{
-    height: 20px;
+    height: 15px;
+}
+footer{
+    margin-left: 40px;
+    color: hsl(0, 0%, 56%);
+    font-family: monospace;
+    bottom: 0px;
 }
 #b-bodycontainer{
     display: flex;
@@ -217,13 +219,13 @@ footer{
 }
 #biohead{
     color: hsl(0, 0%, 100%);
-    font: 2em ProtestRevolution-Regular;
+    font: 1.5em ProtestRevolution-Regular;
     align-self: flex-start;
 }
-.biop{
+#biop{
     color: hsl(0, 0%, 72%);
     padding: 15px;
-    font-size: 1.3em;
+    font-size: 1em;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: justify;
     align-items: start;
@@ -237,11 +239,12 @@ footer{
     animation-duration: 3s;
 }
 #p-bodycontainer h2{
-    font: 2em Times;
+    font: 1.5em Times;
 }
 #cardcontainer{
     animation: fadeIn;
     animation-duration: 5s;
+    margin-bottom: 10px;
 }
 #card h3{
     color: hsl(247, 100%, 50%);
@@ -252,26 +255,22 @@ footer{
 #s-bodycontainer{
     display: flex;
     flex-direction: column;
-    row-gap: 6px;
+    row-gap: 10px;
     column-gap: 8px;
     animation: fadeIn;
     animation-duration: 3s;
 }
-#skillsheadings{
-    font-family: 'Times New Roman', serif;
-    font-size: 1em;
-    margin-bottom: 1%;
-}
 #s-bodycontainer h1{
     color: hsl(0, 0%, 100%);
-    font: 2em times italic;
+    font: 1.5em times italic;
     text-decoration: dotted;
     display: flex;
     justify-content: center;
 }
 #s-bodycontainer h2{
     color: hsl(247, 100%, 50%);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font: 1.3em sans-serif;
+    font-family: Georgia;
     padding-left: 1.5%;
     margin-bottom: 2%;
     content: '';
@@ -286,7 +285,7 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    column-gap: 60px;
+    column-gap: 100px;
 }
 #s-bodycontainer div img{
     height: 60px;
@@ -294,19 +293,22 @@ footer{
     animation-duration: 2s;
     
 }
+#tools{
+    margin-bottom: 20px;
+}
 #c-bodycontainer{
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 30px;
     align-items: center;
     animation: fadeIn;
     animation-duration: 3s;
     height: 68vh;
+    margin-bottom: 30px;
 }
 #c-bodycontainer h1{
     color: hsl(0, 0%, 100%);
-    font: 2em times;
-    text-decoration: dashed;
+    font: 1.5em times;
 }
 #c-bodycontainer a{
     text-decoration: none;
@@ -353,10 +355,6 @@ footer{
     display: block;
     color: hsl(0, 0%, 45%);
 }
-.bodycontainer{
-    height: auto;
-    justify-self: center;
-}
 .bodytext{
     flex-direction: column;
     text-align: center;
@@ -366,30 +364,43 @@ footer{
 }
 #cv{
     display: none;
-
 }
 .bodytext2{
-    font-size: small;
     text-align: right;
     align-items: end;
+}
+#summary{
+    display: none;
+    
 }
 #contactbutton{
     font-size: 0.9rem;
     margin-top: 0%;
 
 }
-#s-bodycontainer h2{
-    color: hsl(247, 100%, 50%);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-left: 1.5%;
-    margin-bottom: 5%;
-    content: '';
-    height: 1px;
-    width: 100%;
-    background: hsl(247, 100%, 50%);
-    left: 0;
-    top: 0px;
-    bottom: -5px;
+#biop{
+    font: 0.9em;
+    margin-bottom: 10px;
 }
+#s-bodycontainer{
+    row-gap: 10px;
+    column-gap: 5px;
+}
+#s-bodycontainer h2{
+    margin-bottom: 6%;
+    transition: ease-in;
+    font: 1em sans-serif;
+}
+#s-bodycontainer div{
+    column-gap: 10px;
+}
+#s-bodycontainer div img{
+    height: 40px;
+    animation-name: fadeIn, slideIn;
+    animation-duration: 2s;
     
+}
+#c-bodycontainer h2{
+    font: 0.9em arial;
+}
 }
