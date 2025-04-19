@@ -1,15 +1,3 @@
-@font-face{
-
-    src: url(fonts/ProtestRevolution-Regular.ttf);
-    font-family: ProtestRevolution-Regular;
-    src: url(fonts/PlayfairDisplay-Italic.ttf);
-    font-family: PlayfairDisplay-Italic;
-    src: url(fonts/PTSerif-Regular.ttf);
-    font-family: PTSerif-Regular;
-    src: url(fonts/BebasNeue-Regular.ttf);
-    font-family: BebasNeue-Regular;
-}
-
 Body{
     background-color: hsl(0, 0%, 0%);
     margin: 0px;
@@ -35,14 +23,13 @@ header{
     align-items: center;
 }
 #logo img{
-    height: 25px;
+    height: 1.3em;
 }
 #logo img:hover{
     filter: drop-shadow(0 0 1em rgb(0, 38, 255));
 }
 .hamburger{
     display: none;
-    font-size: 24px;
     cursor: pointer;
 }
 .navbuttons{
@@ -54,9 +41,8 @@ header{
 .navbuttons a{
     padding: 5px 5px;
     text-decoration: none;
-    font-family: Times, 'Times New Roman', serif;
+    font: 1em arial;
     color: hsl(0, 0%, 90%);
-    font-size: 1.1em;
     display: flex;
     transition: background-color 1.2s ease;
     position: relative;
@@ -79,16 +65,14 @@ header{
     color: hsl(247, 100%, 27%);
 }
 #hi{
-    font-family: monospace;
-    font-size: large;
+    font: 1em monospace;
     color: hsl(0, 0%, 72%);
     margin-bottom: 0%;
 }
 #h1intro{ 
     display: inline;
     color: hsl(0, 0%, 100%);
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 5vh;
+    font: 2em Tahoma;
     font-weight: bold;
     margin-bottom: 1%;
 }
@@ -110,7 +94,6 @@ i{
     width: 30%;
     display: flex; 
     flex-direction: column;
-    row-gap: 0%;
     float: left;
 }
 .bodytext a{
@@ -157,13 +140,12 @@ i{
     color: hsl(0, 0%, 100%);
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: start;
 }
 .bodytext2 button{
     background: transparent;
     border-radius: 3px;
-    font-family: monospace;
-    font-size: 1.2rem;
+    font-size: 1em;
     position: relative;
     overflow: hidden;
 }
@@ -186,50 +168,56 @@ span{
     text-decoration: none;
     color: hsl(0, 0%, 100%);
     font-family: 'Times New Roman';
-    position: relative;
 }
 #summary{
-    font: 1.2em arial;
+    font: 1em arial;
     color: hsl(0, 0%, 100%);
 }
-.background footer{
-    margin-left: 40px;
+#bckgrdFooter{
+    text-align: right;
     color: hsl(0, 0%, 56%);
     font-family: monospace;
-    bottom: 0px;
+    bottom: 0em;
     position: absolute;
+    width: 100%;
 }
-#footerLogo img{
-    height: 15px;
+#bckgrdFooter div{
+    padding-right: 1%;
+}
+#bckgrdFooter img{
+    height: 1em;
 }
 footer{
-    margin-left: 40px;
+    text-align: right;
+    padding-right: 40px;
     color: hsl(0, 0%, 56%);
-    font-family: monospace;
+    font: monospace;
     bottom: 0px;
+}
+#footerLogo img{
+    height: 1em;
 }
 #b-bodycontainer{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    flex-direction: column;
+    row-gap: 40px;
     flex-wrap: wrap; 
-    min-height: 60vh;
     animation: fadeIn;
     animation-duration: 3s;
+    margin-bottom: 10%;
 }
 #biohead{
     color: hsl(0, 0%, 100%);
-    font: 1.5em ProtestRevolution-Regular;
-    align-self: flex-start;
+    font: 1.5em times;
+    text-align: center;
 }
 #biop{
     color: hsl(0, 0%, 72%);
-    padding: 15px;
     font-size: 1em;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: arial;
     text-align: justify;
     align-items: start;
-    margin: 1%;
+    margin: 2% 2%;
 }
 #p-bodycontainer{
     display: flex;
@@ -244,7 +232,7 @@ footer{
 #cardcontainer{
     animation: fadeIn;
     animation-duration: 5s;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 #card h3{
     color: hsl(247, 100%, 50%);
@@ -257,6 +245,7 @@ footer{
     flex-direction: column;
     row-gap: 10px;
     column-gap: 8px;
+    margin-bottom: 1em;
     animation: fadeIn;
     animation-duration: 3s;
 }
@@ -270,7 +259,6 @@ footer{
 #s-bodycontainer h2{
     color: hsl(247, 100%, 50%);
     font: 1.3em sans-serif;
-    font-family: Georgia;
     padding-left: 1.5%;
     margin-bottom: 2%;
     content: '';
@@ -309,6 +297,7 @@ footer{
 #c-bodycontainer h1{
     color: hsl(0, 0%, 100%);
     font: 1.5em times;
+    text-decoration: wavy;
 }
 #c-bodycontainer a{
     text-decoration: none;
@@ -335,7 +324,13 @@ footer{
 }
 
 @media screen and (max-width : 800px){
-    
+
+header{
+    justify-content: space-between;
+}
+#logo img{
+    height: 1em;
+}
 .navbuttons{
     display: none;
     flex-direction: column;
@@ -354,16 +349,16 @@ footer{
 .hamburger{
     display: block;
     color: hsl(0, 0%, 45%);
+    position: relative;
+    top: -0.2em;
 }
-.bodytext{
-    flex-direction: column;
-    text-align: center;
-}
-#h1intro{ 
-    font-size: 2rem;
-}
+
 #cv{
     display: none;
+}
+.bodytext{
+    height: 10%;
+
 }
 .bodytext2{
     text-align: right;
@@ -374,13 +369,16 @@ footer{
     
 }
 #contactbutton{
-    font-size: 0.9rem;
+    size: 0px;
     margin-top: 0%;
 
 }
+.background footer{
+    position: fixed;
+}
 #biop{
-    font: 0.9em;
-    margin-bottom: 10px;
+    font: 0.8em arial;
+    margin: 0% 5%;
 }
 #s-bodycontainer{
     row-gap: 10px;
@@ -389,7 +387,7 @@ footer{
 #s-bodycontainer h2{
     margin-bottom: 6%;
     transition: ease-in;
-    font: 1em sans-serif;
+    font: 1em;
 }
 #s-bodycontainer div{
     column-gap: 10px;
