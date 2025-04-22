@@ -368,10 +368,8 @@ header{
     display: none;
     
 }
-#contactbutton{
-    size: 0px;
-    margin-top: 0%;
-
+#contactbutton a{
+    font: 0.8em times;
 }
 .background footer{
     position: fixed;
