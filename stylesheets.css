@@ -333,14 +333,14 @@ footer{
   
 .card-content .technologies {
     font-size: 0.8rem;
-    color: #00bcd4;
+    color: #ccc;
     font-weight: 600;
     text-transform: uppercase;
 }
   /* Category Titles */
 .categories {
     font-size: 1.5rem;
-    color: #00bcd4;
+    color: #fff;
     text-align: left;
     margin-left: 1rem;
     margin-top: 2rem;
