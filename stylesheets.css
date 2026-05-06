@@ -427,12 +427,6 @@ footer{
     100% {background-position: 0 0;}
 }
 
-@media (max-width: 600px) {
-    #cardcontainer {
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-    }
-}
-
 @media screen and (max-width : 800px){
 
 header{
