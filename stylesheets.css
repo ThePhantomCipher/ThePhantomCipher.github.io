@@ -495,27 +495,27 @@ nav div{
     margin: 0% 5%;
 }
 .card {
-    width: 200px;
-    min-width: 200px;
+        width: 100%;
+        min-width: unset;
 }
 .card:hover {
     transform: translateY(-8px);
     z-index: 10;
 }
 .card-image img {
-    height: 120px;
+        height: 120px;
 }
 #cardcontainer {
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
-    }
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 12px;
+        padding: 0 10px; /* prevents edge overflow */
+}
 .description {
     font-size: 0.85em;
-  }
-
+}
 .technologies {
     font-size: 0.75em;
-  }
+}
 #s-bodycontainer{
     row-gap: 10px;
     column-gap: 5px;
